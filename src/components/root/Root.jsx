@@ -1,13 +1,13 @@
+import { Outlet } from "react-router-dom";
 import Navbar from "../navbar/Navbar";
+import Footer from "../footer/Footer";
 
 const Root = () => {
   return (
     <div>
-      <div className=" bg-primary text-white rounded-xl mt-4 mx-7 ">
-        <div className="w-11/12 mx-auto">
-          <Navbar />
-        </div>
-      </div>
+      <Navbar />
+      <Outlet />
+      <Footer />
     </div>
   );
 };
