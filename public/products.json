@@ -1,0 +1,146 @@
+[
+  {
+    "product_id": "P001",
+    "product_title": "Samsung Galaxy A04e",
+    "product_image": "https://i.ibb.co.com/CvsGhKP/Samsung-Galaxy-A04e.webp",
+    "category": "Mobile",
+    "price": 999.0,
+    "description": "High-end smartphone with advanced camera and high-speed performance.",
+    "specification": [
+      "6.5-inch OLED display",
+      "Triple-lens rear camera",
+      "5G connectivity",
+      "128GB storage"
+    ],
+    "availability": "In Stock",
+    "rating": 4.8
+  },
+  {
+    "product_id": "P002",
+    "product_title": "iPhone 15 Pro",
+    "product_image": "https://i.ibb.co.com/G9MZJgF/i-Phone-15-Pro.webp",
+    "category": "Mobile",
+    "price": 199.0,
+    "description": "Affordable smartphone with essential features and reliable battery life.",
+    "specification": [
+      "6.1-inch LCD display",
+      "Dual rear cameras",
+      "4G LTE",
+      "64GB storage"
+    ],
+    "availability": "In Stock",
+    "rating": 4.2
+  },
+  {
+    "product_id": "P003",
+    "product_title": "Xiaomi Redmi 13C",
+    "product_image": "https://i.ibb.co.com/QjKKPvg/Xiaomi-Redmi-13-C.webp",
+    "category": "Mobile",
+    "price": 1399.0,
+    "description": "Foldable smartphone with a flexible screen and dual batteries.",
+    "specification": [
+      "7.6-inch foldable OLED display",
+      "Dual rear cameras",
+      "5G",
+      "256GB storage"
+    ],
+    "availability": "In Stock",
+    "rating": 4.7
+  },
+  {
+    "product_id": "L001",
+    "product_title": "Lenovo IdeaPad Flex 5 ",
+    "product_image": "https://i.ibb.co.com/TB1q1cK/Lenovo-Idea-Pad-Flex-5.webp",
+    "category": "Laptop",
+    "price": 1299.0,
+    "description": "Powerful gaming laptop with high-end graphics and cooling.",
+    "specification": [
+      "Intel Core i7",
+      "16GB RAM",
+      "512GB SSD",
+      "NVIDIA GTX 1660"
+    ],
+    "availability": "No Stock",
+    "rating": 4.8
+  },
+  {
+    "product_id": "L002",
+    "product_title": "Apple MacBook Air 15",
+    "product_image": "https://i.ibb.co.com/cXd33Xq/Apple-Mac-Book-Air-15.webp",
+    "category": "Laptop",
+    "price": 850.0,
+    "description": "Lightweight ultrabook for professionals with a sleek design.",
+    "specification": [
+      "Intel Core i5",
+      "8GB RAM",
+      "256GB SSD",
+      "13.3-inch FHD Display"
+    ],
+    "availability": "In Stock",
+    "rating": 4.5
+  },
+  {
+    "product_id": "L003",
+    "product_title": "Lenovo Idea Pad Slim 3",
+    "product_image": "https://i.ibb.co.com/qMdh3bb/Lenovo-Idea-Pad-Slim-3.webp",
+    "category": "Laptop",
+    "price": 750.0,
+    "description": "Convertible laptop with touchscreen and 360-degree hinge.",
+    "specification": [
+      "Intel Core i3",
+      "8GB RAM",
+      "256GB SSD",
+      "12.5-inch HD Touch Display"
+    ],
+    "availability": "In Stock",
+    "rating": 4.3
+  },
+  {
+    "product_id": "A001",
+    "product_title": "Hoco EW25 TWS Wireless Bluetooth Earbuds",
+    "product_image": "https://i.ibb.co.com/WBmRHhQ/Hoco-EW25-TWS-Wireless-Bluetooth-Earbuds.webp",
+    "category": "Accessories",
+    "price": 49.99,
+    "description": "Compact wireless earbuds with noise cancellation.",
+    "specification": [
+      "Bluetooth 5.1",
+      "24-hour battery life",
+      "Water-resistant",
+      "Touch controls"
+    ],
+    "availability": "No Stock",
+    "rating": 4.4
+  },
+  {
+    "product_id": "A002",
+    "product_title": "Awei T71 True Wireless Earbuds",
+    "product_image": "https://i.ibb.co.com/nbtqLZv/Awei-T71-True-Wireless-Earbuds.webp",
+    "category": "Accessories",
+    "price": 45.99,
+    "description": "High-capacity portable charger with dual USB ports.",
+    "specification": [
+      "20000mAh capacity",
+      "Fast charging",
+      "Compact design",
+      "LED indicator"
+    ],
+    "availability": "In Stock",
+    "rating": 4.6
+  },
+  {
+    "product_id": "A003",
+    "product_title": "Tripple  EW45 TWS Bluetooth Earbuds",
+    "product_image": "https://i.ibb.co.com/XzLJpX9/Tripple-EW45-TWS-Wireless-Bluetooth-Earbuds.webp",
+    "category": "Accessories",
+    "price": 249.99,
+    "description": "Advanced smartwatch with fitness tracking and health monitoring.",
+    "specification": [
+      "AMOLED display",
+      "Heart rate monitor",
+      "GPS",
+      "Water-resistant"
+    ],
+    "availability": "In Stock",
+    "rating": 4.7
+  }
+]

@@ -1,8 +1,10 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { CiHeart } from "react-icons/ci";
 
 const Navbar = () => {
+  const { pathname } = useLocation();
+
   const navlinks = (
     <>
       <li>
@@ -18,7 +20,13 @@ const Navbar = () => {
   );
 
   return (
-    <div className=" bg-primary text-white rounded-tl-xl rounded-tr-xl mt-4 mx-7">
+    <div
+      className={`mt-4 mx-7 ${
+        pathname === "/"
+          ? "bg-primary text-white rounded-tl-xl rounded-tr-xl"
+          : "text-black bg-white"
+      }`}
+    >
       <div className="w-11/12 mx-auto">
         <div className="navbar">
           <div className="navbar-start">
@@ -50,16 +58,18 @@ const Navbar = () => {
                 {navlinks}
               </ul>
             </div>
-            <a className="text-xl font-bold">Gadget Heaven</a>
+            <Link to="/" className="text-xl font-bold">
+              Gadget Heaven
+            </Link>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">{navlinks}</ul>
           </div>
           <div className="navbar-end">
-            <Link className="bg-white text-black w-10 h-10 rounded-full flex items-center justify-center">
+            <Link className="bg-white border text-black w-10 h-10 rounded-full flex items-center justify-center">
               <AiOutlineShoppingCart size={20} />
             </Link>
-            <Link className="bg-white text-black w-10 h-10 rounded-full flex items-center justify-center ml-4">
+            <Link className="bg-white border text-black w-10 h-10 rounded-full flex items-center justify-center ml-4">
               <CiHeart size={20} />
             </Link>
           </div>

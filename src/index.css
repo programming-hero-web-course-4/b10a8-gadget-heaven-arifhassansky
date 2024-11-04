@@ -7,3 +7,7 @@ body {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  overflow-y: scroll;
+}
