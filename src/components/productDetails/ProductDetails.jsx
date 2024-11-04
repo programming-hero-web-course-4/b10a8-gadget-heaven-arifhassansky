@@ -3,15 +3,18 @@ import { Link, useLoaderData, useParams } from "react-router-dom";
 import SectionTitle from "../section-title/SectionTitle";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { CiHeart } from "react-icons/ci";
-import { addToStoredGadgetList } from "../../addToDB/addToDB";
+import { addFavourites, addWishlists } from "../addToDB/addToDB";
 
 const ProductDetails = () => {
   const data = useLoaderData();
   const { id } = useParams();
   const [seeDetails, setSeeDetails] = useState({});
 
-  const handleGadgetBtn = (id) => {
-    addToStoredGadgetList(id);
+  const handleAddBtn = (product) => {
+    addFavourites(product);
+  };
+  const handleWishAddbtn = (product) => {
+    addWishlists(product);
   };
 
   useEffect(() => {
@@ -106,12 +109,15 @@ const ProductDetails = () => {
             </div>
             <div className="flex items-center">
               <Link
-                onClick={() => handleGadgetBtn(seeDetails?.product_id)}
+                onClick={() => handleAddBtn(seeDetails)}
                 className="btn border rounded-full bg-primary text-white flex items-center"
               >
                 Add To Card <AiOutlineShoppingCart size={20} />
               </Link>
-              <Link className="bg-white text-black w-14 h-14 border p-2 rounded-full flex items-center justify-center ml-4">
+              <Link
+                onClick={() => handleWishAddbtn(seeDetails)}
+                className="bg-white text-black w-14 h-14 border p-2 rounded-full flex items-center justify-center ml-4"
+              >
                 <CiHeart size={50} />
               </Link>
             </div>

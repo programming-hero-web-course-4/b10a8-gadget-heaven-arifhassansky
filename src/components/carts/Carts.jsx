@@ -1,25 +1,28 @@
 import { useEffect, useState } from "react";
-import { getStoredGadgetList } from "../../addToDB/addToDB";
-import { useLoaderData } from "react-router-dom";
+import { getAllFavouites, removeFavourite } from "../addToDB/addToDB";
 import Cart from "../cart/Cart";
 
 const Carts = () => {
-  const data = useLoaderData();
-  const [gadgetLists, setGadgetLists] = useState([]);
-
+  const [favourites, setFavourites] = useState([]);
   useEffect(() => {
-    const storedGadgetList = getStoredGadgetList();
-    const likedBookList = data.filter((gadget) =>
-      storedGadgetList.includes(gadget.product_id)
-    );
+    const gadgets = getAllFavouites();
+    setFavourites(gadgets);
+  }, []);
 
-    setGadgetLists(likedBookList);
-  }, [data]);
+  const handleRemoveCart = (id) => {
+    removeFavourite(id);
+    const gadgets = getAllFavouites();
+    setFavourites(gadgets);
+  };
 
   return (
     <div className="pb-80">
-      {gadgetLists.map((gadget) => (
-        <Cart key={gadget.product_id} gadget={gadget} />
+      {favourites.map((item) => (
+        <Cart
+          key={item.product_id}
+          item={item}
+          handleRemoveCart={handleRemoveCart}
+        />
       ))}
     </div>
   );
