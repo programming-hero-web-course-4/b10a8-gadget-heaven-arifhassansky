@@ -1,5 +1,4 @@
 const Wishlist = ({ item, handleRemovewishlist }) => {
-  console.log(item);
   const { product_image, product_title, description, price, product_id } = item;
   return (
     <div className="flex gap-6 items-center w-11/12 mx-auto mt-8 p-8 bg-white rounded-2xl">

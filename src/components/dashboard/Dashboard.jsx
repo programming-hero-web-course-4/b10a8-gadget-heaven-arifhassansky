@@ -1,4 +1,4 @@
-import { Link, NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import SectionTitle from "../section-title/SectionTitle";
 
 const Dashboard = () => {
@@ -30,19 +30,6 @@ const Dashboard = () => {
           >
             Wishlist
           </NavLink>
-        </div>
-      </div>
-
-      <div className="flex justify-between w-11/12 mx-auto mt-12">
-        <h2 className="font-bold text-2xl">Cart</h2>
-        <div className="flex justify-between items-center gap-6">
-          <h3 className="font-bold text-xl">Total Cost: </h3>
-          <Link className="bg-gray-100 border px-8 p-3 rounded-full text-primary text-lg font-semibold">
-            Sort By Price <i className="fa-solid fa-sliders ml-2 rotate-90"></i>
-          </Link>
-          <Link className="bg-primary border px-8 p-3 rounded-full text-white text-lg font-semibold">
-            Purchase
-          </Link>
         </div>
       </div>
       <Outlet />
