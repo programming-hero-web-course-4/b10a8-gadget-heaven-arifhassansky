@@ -42,16 +42,15 @@ const ProductDetails = () => {
   return (
     <>
       <div className="bg-gray-100 relative">
-        <div className="pt-8 bg-primary text-white pb-60 mb-96">
+        <div className="pt-8 bg-primary text-white pb-60 mb-[800px] md:mb-[600px] lg:mb-96">
           <SectionTitle
             title="Product Details"
-            subtitle="Explore the latest gadgets that will take your experience to the next level. From smart devices to br
-       the coolest accessories, we have it all!"
+            subtitle="Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!"
           />
         </div>
 
-        <div className="w-10/12 mx-auto flex gap-8 p-8 bg-white rounded-3xl absolute top-36 left-32">
-          <figure className="w-1/3 ">
+        <div className="w-10/12 mx-auto flex flex-col items-center lg:items-start lg:flex-row gap-8 p-8 bg-white rounded-3xl absolute top-48 md:top-36 left-10 md:left-20 lg:left-32">
+          <figure className="md:w-1/3">
             <img
               className="w-full h-full object-cover"
               src={seeDetails?.product_image}

@@ -2,7 +2,7 @@ const Cart = ({ item, handleRemoveCart }) => {
   const { product_image, product_title, description, price, product_id } = item;
 
   return (
-    <div className="flex gap-6 items-center w-11/12 mx-auto mt-8 p-8 bg-white rounded-2xl">
+    <div className="flex flex-col md:flex-row gap-6 items-center w-11/12 mx-auto mt-8 p-8 bg-white rounded-2xl">
       <figure className="w-40 rounded-2xl ">
         <img className="rounded-2xl" src={product_image} />
       </figure>

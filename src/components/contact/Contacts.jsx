@@ -8,17 +8,18 @@ const Contacts = () => {
     <div>
       <div className="mt-10 mb-10 p-10 bg-primary text-white">
         {/* address  */}
-        <div className="w-11/12 mx-auto flex justify-between">
+        <div className="w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center">
           <div>
             <h2 className="text-3xl font-bold capitalize">Gadget Heaven</h2>
             <div className=" my-2">
               <span className="text-xl">Average Rating: 4.7</span>
             </div>
             <p>Gadget shop in Multiplan City</p>
-            <h2 className="flex items-center text-xl gap-2 mt-2">
+            <h2 className="flex items-center text:sm md:text-lg lg:text-xl gap-2 mt-2">
               <MdAddLocation />
-              <span className="font-bold">Address:</span> 14 Daisy Garden,
-              Banasree Main Rd, Dhaka 1219
+              <span className="font-bold">
+                Address: 14 Daisy Garden, Banasree Main Rd, Dhaka 1219
+              </span>
             </h2>
             <p className="flex items-center text-xl gap-2">
               <FaPhone />
@@ -30,7 +31,7 @@ const Contacts = () => {
             </h2>
           </div>
           <div>
-            <figure className="w-96">
+            <figure className="md:w-80 lg:w-96 mt-8 md:mt-0">
               <img className="rounded-2xl" src={mapImg} />
             </figure>
           </div>

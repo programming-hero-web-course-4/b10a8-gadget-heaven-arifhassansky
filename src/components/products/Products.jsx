@@ -33,7 +33,9 @@ const Products = () => {
       ) : (
         <div className=" bg-[#F8F8F8] py-24 rounded-3xl flex flex-col justify-center items-center space-y-3 mx-auto">
           <img src={notAvailable} />
-          <h2 className="text-4xl font-black">No Information Available</h2>
+          <h2 className="md:text-2xl lg:text-4xl font-black">
+            No Information Available
+          </h2>
           <p className="text-center">
             There is no information available right now. We are working on it.
             Hopefully <br className="hidden lg:block" />

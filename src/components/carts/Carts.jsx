@@ -73,15 +73,17 @@ const Carts = () => {
       </dialog>
 
       <div>
-        <div className="flex justify-between w-11/12 mx-auto mt-12">
-          <h2 className="font-bold text-2xl">Cart</h2>
+        <div className="flex flex-col md:flex-row justify-between items-center w-11/12 mx-auto mt-12">
+          <h2 className="font-bold text-2xl mb-4 md:mb-0">Cart</h2>
           <div className="flex justify-between items-center gap-6">
-            <h3 className="font-bold text-xl">Total Cost: ${cartPrice} </h3>
+            <h3 className="font-bold text:sm  md:text-xl">
+              Total Cost: ${cartPrice}
+            </h3>
             <Link
               onClick={handleSortBtn}
-              className="bg-gray-100 border px-8 p-3 rounded-full text-primary text-lg font-semibold"
+              className="bg-gray-100 border px-4 md:px-8 p-1 md:p-3 rounded-full text-primary text-lg font-semibold"
             >
-              Sort By Price{" "}
+              Sort By Price
               <i className="fa-solid fa-sliders ml-2 rotate-90"></i>
             </Link>
             <button
