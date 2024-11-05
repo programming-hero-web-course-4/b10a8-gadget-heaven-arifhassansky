@@ -1,24 +1,24 @@
 import { useEffect, useState } from "react";
-import { getAllFavouites, removeFavourite } from "../addToDB/addToDB";
+import { getAllCarts, removeFavourite } from "../addToDB/addToDB";
 import Cart from "../cart/Cart";
 import { Link } from "react-router-dom";
 
 const Carts = () => {
   const [favourites, setFavourites] = useState([]);
   useEffect(() => {
-    const gadgets = getAllFavouites();
+    const gadgets = getAllCarts();
     setFavourites(gadgets);
   }, []);
 
   const handleRemoveCart = (id) => {
     removeFavourite(id);
-    const gadgets = getAllFavouites();
+    const gadgets = getAllCarts();
     setFavourites(gadgets);
   };
 
   const [cartPrice, setCartPrice] = useState(0);
 
-  const products = getAllFavouites();
+  const products = getAllCarts();
 
   useEffect(() => {
     let sum = 0;

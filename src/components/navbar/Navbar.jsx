@@ -1,7 +1,7 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { CiHeart } from "react-icons/ci";
-import { getAllFavouites, getAllWishlist } from "../addToDB/addToDB";
+import { getAllCarts, getAllWishlist } from "../addToDB/addToDB";
 
 const Navbar = () => {
   const { pathname } = useLocation();
@@ -20,8 +20,8 @@ const Navbar = () => {
     </>
   );
 
-  const favourites = getAllFavouites();
-  const wishlist = getAllWishlist();
+  const carts = getAllCarts();
+  const wishlists = getAllWishlist();
 
   return (
     <div
@@ -72,17 +72,17 @@ const Navbar = () => {
           <div className="navbar-end">
             <Link className="bg-white border text-black w-10 h-10 rounded-full flex items-center justify-center relative">
               <AiOutlineShoppingCart size={20} />
-              {favourites.length > 0 && (
-                <div className="h-5 w-5 bg-green-400 text-white rounded-full text-center absolute -top-3 -right-1">
-                  {favourites.length}
+              {carts.length > 0 && (
+                <div className="h-5 w-5 bg-green-400 text-white rounded-full text-center absolute -top-2 -right-1">
+                  {carts.length}
                 </div>
               )}
             </Link>
             <Link className="bg-white border text-black w-10 h-10 rounded-full flex items-center justify-center ml-4 relative">
               <CiHeart size={20} />
-              {wishlist.length > 0 && (
-                <div className="h-5 w-5 bg-green-400 text-white rounded-full text-center absolute -top-3 -right-1">
-                  {wishlist.length}
+              {wishlists.length > 0 && (
+                <div className="h-5 w-5 bg-green-400 text-white rounded-full text-center absolute -top-2 -right-1">
+                  {wishlists.length}
                 </div>
               )}
             </Link>

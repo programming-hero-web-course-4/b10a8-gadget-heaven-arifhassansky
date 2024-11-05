@@ -1,4 +1,4 @@
-const getAllFavouites = () => {
+const getAllCarts = () => {
   const all = localStorage.getItem("favourites");
 
   if (all) {
@@ -10,7 +10,7 @@ const getAllFavouites = () => {
 };
 
 const addFavourites = (product) => {
-  const favourites = getAllFavouites();
+  const favourites = getAllCarts();
   const isExists = favourites.find(
     (item) => item.product_id == product.product_id
   );
@@ -20,12 +20,12 @@ const addFavourites = (product) => {
 };
 
 const removeFavourite = (id) => {
-  const favourites = getAllFavouites();
+  const favourites = getAllCarts();
   const remaining = favourites.filter((product) => product.product_id !== id);
   localStorage.setItem("favourites", JSON.stringify(remaining));
 };
 
-export { addFavourites, getAllFavouites, removeFavourite };
+export { addFavourites, getAllCarts, removeFavourite };
 
 // Wishlist
 
