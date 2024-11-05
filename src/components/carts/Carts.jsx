@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import { getAllCarts, removeFavourite } from "../addToDB/addToDB";
 import Cart from "../cart/Cart";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import modalImg from "../../assets/Group.png";
 
 const Carts = () => {
+  const navigate = useNavigate();
   const [favourites, setFavourites] = useState([]);
   useEffect(() => {
     const gadgets = getAllCarts();
@@ -34,6 +35,7 @@ const Carts = () => {
     favourites.map((product) => removeFavourite(product.product_id));
     setFavourites([]);
     setCartPrice(0);
+    navigate("/");
   };
 
   // Sort By price

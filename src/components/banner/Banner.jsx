@@ -12,7 +12,10 @@ const Banner = () => {
         level. From smart devices to <br className="hidden lg:block" /> the
         coolest accessories, we have it all!
       </h4>
-      <Link className="bg-white rounded-full px-8 py-4 text-primary font-bold ">
+      <Link
+        to="/dashboard"
+        className="bg-white rounded-full px-8 py-4 text-primary font-bold "
+      >
         Shop Now
       </Link>
     </div>

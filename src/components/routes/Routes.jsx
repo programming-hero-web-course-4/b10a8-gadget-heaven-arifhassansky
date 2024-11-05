@@ -7,15 +7,18 @@ import Dashboard from "../dashboard/Dashboard";
 import Statistics from "../statistics/Statistics";
 import Carts from "../carts/carts";
 import Wishlists from "../wishlists/Wishlists";
+import Error from "../error/Error";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+    errorElement: <Error />,
     children: [
       {
         path: "/",
         element: <Home />,
+
         loader: () => fetch("../category.json"),
         children: [
           {

@@ -1,15 +1,28 @@
 import { useEffect, useState } from "react";
-import { Link, useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
 import SectionTitle from "../section-title/SectionTitle";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { CiHeart } from "react-icons/ci";
-import { addFavourites, addWishlists, getAllCarts } from "../addToDB/addToDB";
+import {
+  addFavourites,
+  addWishlists,
+  getAllWishlist,
+} from "../addToDB/addToDB";
+import Star from "../star/Star";
 
 const ProductDetails = () => {
   const data = useLoaderData();
   const { id } = useParams();
-  const [seeDetails, setSeeDetails] = useState({});
+  const [seeDetails, setSeeDetails] = useState([]);
   const [btnDisable, setBtnDisable] = useState(false);
+
+  const handleAddBtn = (product) => {
+    addFavourites(product);
+  };
+  const handleWishAddbtn = (product) => {
+    addWishlists(product);
+    setBtnDisable(true);
+  };
 
   useEffect(() => {
     const filteredProducts = [...data].find(
@@ -17,7 +30,7 @@ const ProductDetails = () => {
     );
     setSeeDetails(filteredProducts);
 
-    const favourites = getAllCarts();
+    const favourites = getAllWishlist();
     const isExists = favourites.find(
       (item) => item.product_id == filteredProducts.product_id
     );
@@ -25,14 +38,6 @@ const ProductDetails = () => {
       setBtnDisable(true);
     }
   }, [data, id]);
-
-  const handleAddBtn = (product) => {
-    addFavourites(product);
-    setBtnDisable(true);
-  };
-  const handleWishAddbtn = (product) => {
-    addWishlists(product);
-  };
 
   return (
     <>
@@ -62,12 +67,12 @@ const ProductDetails = () => {
             </h4>
             <span
               className={`px-4 py-1 rounded-full font-medium ${
-                seeDetails?.availability === "In Stock"
+                seeDetails?.availability === true
                   ? "bg-green-100 border-green-400"
                   : "bg-red-100 border-red-400"
               }`}
             >
-              {seeDetails?.availability}
+              {seeDetails?.availability ? "In Stock" : "No Stock"}
             </span>
             <h4 className="mb-4 mt-4 text-gray-500">
               {seeDetails?.description}
@@ -83,54 +88,26 @@ const ProductDetails = () => {
               <p>No specifications available.</p>
             )}
             <h3 className="mb-3 mt-4 text-lg font-bold">Rating</h3>
-
-            <div className="mb-4 flex items-center gap-4">
-              <div className="rating">
-                <input
-                  type="radio"
-                  name="rating-4"
-                  className="mask mask-star-2 bg-orange-400"
-                />
-                <input
-                  type="radio"
-                  name="rating-4"
-                  className="mask mask-star-2 bg-orange-400"
-                  defaultChecked
-                />
-                <input
-                  type="radio"
-                  name="rating-4"
-                  className="mask mask-star-2 bg-orange-400"
-                />
-                <input
-                  type="radio"
-                  name="rating-4"
-                  className="mask mask-star-2 bg-orange-400"
-                />
-                <input
-                  type="radio"
-                  name="rating-4"
-                  className="mask mask-star-2 bg-orange-400"
-                />
-              </div>
-              <h4 className="bg-gray-100 px-4 py-1 rounded-full">
+            <div className="flex items-center gap-4 mb-4">
+              <Star stars={seeDetails?.rating} />
+              <h3 className="bg-gray-100 px-4 py-2 font-medium rounded-full">
                 {seeDetails?.rating}
-              </h4>
+              </h3>
             </div>
             <div className="flex items-center">
               <button
-                disabled={btnDisable}
                 onClick={() => handleAddBtn(seeDetails)}
                 className="btn border rounded-full bg-primary text-white flex items-center"
               >
                 Add To Card <AiOutlineShoppingCart size={20} />
               </button>
-              <Link
+              <button
+                disabled={btnDisable}
                 onClick={() => handleWishAddbtn(seeDetails)}
-                className="bg-white text-black w-14 h-14 border p-2 rounded-full flex items-center justify-center ml-4"
+                className="bg-white btn text-black w-16 h-16 border rounded-full flex items-center justify-center ml-4"
               >
                 <CiHeart size={50} />
-              </Link>
+              </button>
             </div>
           </div>
         </div>
