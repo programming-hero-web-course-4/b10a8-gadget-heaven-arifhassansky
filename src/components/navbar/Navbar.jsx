@@ -70,7 +70,10 @@ const Navbar = () => {
             <ul className="menu menu-horizontal px-1">{navlinks}</ul>
           </div>
           <div className="navbar-end">
-            <Link className="bg-white border text-black w-10 h-10 rounded-full flex items-center justify-center relative">
+            <Link
+              to="/dashboard"
+              className="bg-white border text-black w-10 h-10 rounded-full flex items-center justify-center relative"
+            >
               <AiOutlineShoppingCart size={20} />
               {carts.length > 0 && (
                 <div className="h-5 w-5 bg-green-400 text-white rounded-full text-center absolute -top-2 -right-1">
@@ -78,7 +81,10 @@ const Navbar = () => {
                 </div>
               )}
             </Link>
-            <Link className="bg-white border text-black w-10 h-10 rounded-full flex items-center justify-center ml-4 relative">
+            <Link
+              to="/dashboard"
+              className="bg-white border text-black w-10 h-10 rounded-full flex items-center justify-center ml-4 relative"
+            >
               <CiHeart size={20} />
               {wishlists.length > 0 && (
                 <div className="h-5 w-5 bg-green-400 text-white rounded-full text-center absolute -top-2 -right-1">

@@ -3,26 +3,36 @@ import { Link, useLoaderData, useParams } from "react-router-dom";
 import SectionTitle from "../section-title/SectionTitle";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { CiHeart } from "react-icons/ci";
-import { addFavourites, addWishlists } from "../addToDB/addToDB";
+import { addFavourites, addWishlists, getAllCarts } from "../addToDB/addToDB";
 
 const ProductDetails = () => {
   const data = useLoaderData();
   const { id } = useParams();
   const [seeDetails, setSeeDetails] = useState({});
-
-  const handleAddBtn = (product) => {
-    addFavourites(product);
-  };
-  const handleWishAddbtn = (product) => {
-    addWishlists(product);
-  };
+  const [btnDisable, setBtnDisable] = useState(false);
 
   useEffect(() => {
     const filteredProducts = [...data].find(
       (product) => product.product_id == id
     );
     setSeeDetails(filteredProducts);
+
+    const favourites = getAllCarts();
+    const isExists = favourites.find(
+      (item) => item.product_id == filteredProducts.product_id
+    );
+    if (isExists) {
+      setBtnDisable(true);
+    }
   }, [data, id]);
+
+  const handleAddBtn = (product) => {
+    addFavourites(product);
+    setBtnDisable(true);
+  };
+  const handleWishAddbtn = (product) => {
+    addWishlists(product);
+  };
 
   return (
     <>
@@ -108,12 +118,13 @@ const ProductDetails = () => {
               </h4>
             </div>
             <div className="flex items-center">
-              <Link
+              <button
+                disabled={btnDisable}
                 onClick={() => handleAddBtn(seeDetails)}
                 className="btn border rounded-full bg-primary text-white flex items-center"
               >
                 Add To Card <AiOutlineShoppingCart size={20} />
-              </Link>
+              </button>
               <Link
                 onClick={() => handleWishAddbtn(seeDetails)}
                 className="bg-white text-black w-14 h-14 border p-2 rounded-full flex items-center justify-center ml-4"

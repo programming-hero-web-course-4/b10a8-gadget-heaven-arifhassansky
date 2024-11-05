@@ -30,6 +30,12 @@ const Carts = () => {
     setCartPrice(sum);
   }, [products]);
 
+  const handleCloseModal = () => {
+    favourites.map((product) => removeFavourite(product.product_id));
+    setFavourites([]);
+    setCartPrice(0);
+  };
+
   // Sort By price
   const handleSortBtn = () => {
     const sortdsc = products.sort((a, b) => b.price - a.price);
@@ -53,7 +59,10 @@ const Carts = () => {
           </h3>
           <div className="modal-action">
             <form method="dialog">
-              <button className="btn px-[184px] py-2 rounded-full">
+              <button
+                onClick={handleCloseModal}
+                className="btn px-[184px] py-2 rounded-full"
+              >
                 Close
               </button>
             </form>
