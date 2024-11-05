@@ -84,12 +84,13 @@ const Carts = () => {
               Sort By Price{" "}
               <i className="fa-solid fa-sliders ml-2 rotate-90"></i>
             </Link>
-            <Link
+            <button
+              disabled={favourites.length === 0 && cartPrice <= 0}
               onClick={() => modal.showModal()}
-              className="bg-primary border px-8 p-3 rounded-full text-white text-lg font-semibold"
+              className="btn bg-primary border px-8 rounded-full text-white text-lg font-semibold"
             >
               Purchase
-            </Link>
+            </button>
           </div>
         </div>
         <div className="pb-80">

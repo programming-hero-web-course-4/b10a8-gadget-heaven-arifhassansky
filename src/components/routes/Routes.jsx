@@ -8,6 +8,7 @@ import Statistics from "../statistics/Statistics";
 import Carts from "../carts/carts";
 import Wishlists from "../wishlists/Wishlists";
 import Error from "../error/Error";
+import Contacts from "../contact/Contacts";
 
 const router = createBrowserRouter([
   {
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
       {
         path: "/statistics",
         element: <Statistics />,
+      },
+      {
+        path: "/contacts",
+        element: <Contacts />,
       },
     ],
   },
