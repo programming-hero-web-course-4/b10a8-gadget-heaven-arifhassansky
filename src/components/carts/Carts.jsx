@@ -7,6 +7,8 @@ import modalImg from "../../assets/Group.png";
 const Carts = () => {
   const navigate = useNavigate();
   const [favourites, setFavourites] = useState([]);
+  const [cartPrice, setCartPrice] = useState(0);
+
   useEffect(() => {
     const gadgets = getAllCarts();
     setFavourites(gadgets);
@@ -17,8 +19,6 @@ const Carts = () => {
     const gadgets = getAllCarts();
     setFavourites(gadgets);
   };
-
-  const [cartPrice, setCartPrice] = useState(0);
 
   const products = getAllCarts();
 

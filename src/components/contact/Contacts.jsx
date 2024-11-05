@@ -2,10 +2,14 @@ import { MdOutlineMailOutline, MdAddLocation } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
 import MailBox from "../mailBox/MailBox";
 import mapImg from "../../assets/map.png";
+import { Helmet } from "react-helmet";
 
 const Contacts = () => {
   return (
     <div>
+      <Helmet>
+        <title>Contact | Gadget Heaven</title>
+      </Helmet>
       <div className="mt-10 mb-10 p-10 bg-primary text-white">
         {/* address  */}
         <div className="w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center">

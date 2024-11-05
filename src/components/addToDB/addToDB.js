@@ -17,6 +17,16 @@ const addFavourites = (product) => {
     (item) => item.product_id == product.product_id
   );
   if (isExists) return;
+
+  const totalPrice = favourites.reduce((accumulator, currentValue) => {
+    return accumulator + (currentValue.price || 0);
+  }, 0);
+
+  if (totalPrice + product.price > 1000) {
+    toast.error("Oops! You cannot add cart item avobe $1000 ");
+    return;
+  }
+
   favourites.push(product);
   localStorage.setItem("favourites", JSON.stringify(favourites));
   toast.success("Succesfully Added to the Cart!");
@@ -45,14 +55,25 @@ const getAllWishlist = () => {
 };
 
 const addWishlists = (product) => {
-  const favourites = getAllWishlist();
-  const isExists = favourites.find(
-    (item) => item.product_id == product.product_id
+  const wishlist = getAllWishlist();
+
+  const isExists = wishlist.find(
+    (item) => item.product_id === product.product_id
   );
   if (isExists) return;
-  favourites.push(product);
-  localStorage.setItem("wishlist", JSON.stringify(favourites));
-  toast.success("Succesfully Added to wishlist!");
+
+  const totalPrice = wishlist.reduce((accumulator, currentValue) => {
+    return accumulator + (currentValue.price || 0);
+  }, 0);
+
+  if (totalPrice + product.price > 1000) {
+    toast.error("Oops! You cannot add wish item avobe $1000 ");
+    return;
+  }
+
+  wishlist.push(product);
+  localStorage.setItem("wishlist", JSON.stringify(wishlist));
+  toast.success("Successfully Added to Wishlist!");
 };
 
 const removeWishlists = (id) => {
