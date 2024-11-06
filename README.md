@@ -2,9 +2,9 @@
 
 ### GadgetHaven is a gadget-buying website. The site should feature a structured navigation bar, product categories, and individual product details pages. Key functionalities include a shopping cart, a wishlist system, and product filtering. The local storage will manage the cart and wishlist for data persistence. Additional pages will allow users to view and manage their cart and wishlist, sort items by price, and ensure a smooth user experience. The site musthandle edge cases like price limits and prevent errors when reloading.
 
-## Requirement Document
+## Requirement Document Link
 
-For detailed requirements and specifications, please refer to the [Requirement Document](#) <!-- Replace # with the actual URL -->
+https://drive.google.com/file/d/1FH0EQYDnZHAM7eOipYnzR5uFDg8o3z3_/view?usp=drive_link
 
 ## Features
 
@@ -22,7 +22,7 @@ This project uses several key React fundamentals:
 - **JSX (JavaScript XML)** - Syntax extension used to describe the UI.
 - **Props** - Mechanism to pass data between components.
 - **State** - Used to manage and track component-specific data.
-- **React Hooks** - Includes `useState`, `useEffect`, and possibly others such as `useContext` or `useReducer` for state and side effect management.
+- **React Hooks** - Includes `useState`, `useEffect`,`useParams` and possibly others such as `useEffect` for state and side effect management.
 
 These fundamentals were applied to build a clean, modular, and responsive interface.
 
@@ -38,4 +38,4 @@ This combination ensures efficient state management and a seamless user experien
 
 ## Live Website
 
-[https://gadget-heaven-sky.netlify.app/](#)
+https://gadget-heaven-sky.netlify.app

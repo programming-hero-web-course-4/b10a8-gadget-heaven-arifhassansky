@@ -4,7 +4,7 @@
     "product_title": "Samsung Galaxy A04e",
     "product_image": "https://i.ibb.co.com/CvsGhKP/Samsung-Galaxy-A04e.webp",
     "category": "Mobile",
-    "price": 499.0,
+    "price": 250.0,
     "description": "High-end smartphone with advanced camera and high-speed performance.",
     "specification": [
       "6.5-inch OLED display",
@@ -20,7 +20,7 @@
     "product_title": "Awei T71 True Wireless Earbuds",
     "product_image": "https://i.ibb.co.com/nbtqLZv/Awei-T71-True-Wireless-Earbuds.webp",
     "category": "Accessories",
-    "price": 245.99,
+    "price": 150.99,
     "description": "High-capacity portable charger with dual USB ports.",
     "specification": [
       "20000mAh capacity",
@@ -36,7 +36,7 @@
     "product_title": "Xiaomi Redmi 13C",
     "product_image": "https://i.ibb.co.com/QjKKPvg/Xiaomi-Redmi-13-C.webp",
     "category": "Mobile",
-    "price": 399.0,
+    "price": 199.0,
     "description": "Foldable smartphone with a flexible screen and dual batteries.",
     "specification": [
       "7.6-inch foldable OLED display",
@@ -52,7 +52,7 @@
     "product_title": "Doogee V40 Pro Bluea",
     "product_image": "https://i.ibb.co.com/vjMZdCL/Doogee-V40-Pro-Blue.webp",
     "category": "Mobile",
-    "price": 499.99,
+    "price": 259.99,
     "description": "Premium smartphone with Apple's latest A17 chip and advanced camera system.",
     "specification": [
       "6.1-inch Super Retina XDR display",
@@ -100,7 +100,7 @@
     "product_title": "Lenovo IdeaPad Flex 5 ",
     "product_image": "https://i.ibb.co.com/TB1q1cK/Lenovo-Idea-Pad-Flex-5.webp",
     "category": "Laptop",
-    "price": 850.0,
+    "price": 750.0,
     "description": "Powerful gaming laptop with high-end graphics and cooling.",
     "specification": [
       "Intel Core i7",
@@ -116,7 +116,7 @@
     "product_title": "Samsung Galaxy S23",
     "product_image": "https://i.ibb.co.com/DYX8NrR/Samsung-Galaxy-S23.jpg",
     "category": "Mobile",
-    "price": 685.99,
+    "price": 485.99,
     "description": "Flagship smartphone with high-end performance and camera capabilities.",
     "specification": [
       "6.8-inch Dynamic AMOLED display",
@@ -148,7 +148,7 @@
     "product_title": "iPhone 15 Pro",
     "product_image": "https://i.ibb.co.com/G9MZJgF/i-Phone-15-Pro.webp",
     "category": "Mobile",
-    "price": 699.0,
+    "price": 399.0,
     "description": "Affordable smartphone with essential features and reliable battery life.",
     "specification": [
       "6.1-inch LCD display",

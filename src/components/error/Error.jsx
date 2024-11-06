@@ -11,7 +11,10 @@ const Error = () => {
       <h3 className="text-lg font-medium mb-4">
         We cannot find the page you are looking for.
       </h3>
-      <Link className="bg-primary font-medium rounded-lg text-white px-6 py-2">
+      <Link
+        to="/"
+        className="bg-primary font-medium rounded-lg text-white px-6 py-2"
+      >
         Back to Home
       </Link>
       <figure className="mt-4">

@@ -5,10 +5,10 @@ const Categories = ({ categories }) => {
     <div className="p-6 bg-white rounded-2xl flex flex-col gap-y-6">
       {categories.map((category) => (
         <NavLink
-          to={`/category/${category.category}`}
           key={category.id}
+          to={`/category/${category.category}`}
           className={({ isActive }) =>
-            `bg-gray-100 px-6 p-3 rounded-full ${
+            `bg-gray-100 px-8 p-3 rounded-full ${
               isActive && "bg-primary text-white"
             }`
           }
