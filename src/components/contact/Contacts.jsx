@@ -72,7 +72,7 @@ const Contacts = () => {
                 assistance.
               </p>
               <button className="px-4 py-2 text-primary font-bold shadow-xl rounded-lg">
-                Create a Ticket
+                Contact Support
               </button>
             </div>
           </div>
@@ -86,7 +86,7 @@ const Contacts = () => {
                 demonstrating confidence in product quality.
               </p>
               <button className="px-4 py-2 text-primary font-bold shadow-xl rounded-lg">
-                Create a Ticket
+                Claim Warrenty
               </button>
             </div>
           </div>

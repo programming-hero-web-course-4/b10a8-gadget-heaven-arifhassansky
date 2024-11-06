@@ -7,16 +7,18 @@ const Wishlist = ({ item, handleRemovewishlist, handleAddCart }) => {
       </figure>
       <div className=" w-full">
         <div className="flex justify-between">
-          <h2 className="font-semibold text-2xl mb-4 ">{product_title}</h2>
+          <h2 className="font-semibold  text-xl md:text-2xl mb-4 ">
+            {product_title}
+          </h2>
           <button
             onClick={() => handleRemovewishlist(product_id)}
-            className="text-red-600 border border-red-500 rounded-full w-10 h-10 text-center"
+            className="text-red-600 border border-red-500 rounded-full w-6 h-6 md:w-10 md:h-10 text-center"
           >
             <i className="fa-solid fa-x"></i>
           </button>
         </div>
-        <p className="text-lg text-gray-500 mb-4">{description}</p>
-        <h3 className="text-xl font-semibold">Price: ${price}</h3>
+        <p className="text-md md:text-lg text-gray-500 mb-4">{description}</p>
+        <h3 className="text-md md:text-xl font-semibold">Price: ${price}</h3>
         <button
           onClick={() => {
             handleRemovewishlist(product_id), handleAddCart(item);

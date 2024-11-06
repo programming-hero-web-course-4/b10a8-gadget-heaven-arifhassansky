@@ -18,7 +18,7 @@ const Dashboard = () => {
             <NavLink
               to="/dashboard/carts"
               className={({ isActive }) =>
-                `px-16 border p-3 rounded-full text-lg font-bold ${
+                `px-8 md:px-10 lg:px-16 border p-2 md:p-3 rounded-full md:text-lg font-bold ${
                   isActive ? "bg-white text-primary" : "bg-primary text-white"
                 }`
               }
@@ -28,7 +28,7 @@ const Dashboard = () => {
             <NavLink
               to="/dashboard/wishlist"
               className={({ isActive }) =>
-                `px-16 border p-3 rounded-full text-lg font-bold ${
+                `px-8 md:px-10 lg:px-16 border p-2 md:p-3 rounded-full md:text-lg font-bold ${
                   isActive ? "bg-white text-primary" : "bg-primary text-white"
                 }`
               }
