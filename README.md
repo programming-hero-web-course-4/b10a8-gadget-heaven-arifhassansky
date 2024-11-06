@@ -26,8 +26,6 @@ This project uses several key React fundamentals:
 
 These fundamentals were applied to build a clean, modular, and responsive interface.
 
----
-
 ## Data Management
 
 To handle data in this project, we used:

@@ -1,13 +1,22 @@
 import { useEffect, useState } from "react";
-import { getAllWishlist, removeWishlists } from "../addToDB/addToDB";
+import {
+  addFavourites,
+  getAllWishlist,
+  removeWishlists,
+} from "../addToDB/addToDB";
 import Wishlist from "../wishlist/Wishlist";
 
 const Wishlists = () => {
   const [wishlists, setWishlists] = useState([]);
+
   useEffect(() => {
     const gadgets = getAllWishlist();
     setWishlists(gadgets);
   }, []);
+
+  const handleAddCart = (product) => {
+    addFavourites(product);
+  };
 
   // Delete items
 
@@ -28,6 +37,7 @@ const Wishlists = () => {
           key={item.product_id}
           item={item}
           handleRemovewishlist={handleRemovewishlist}
+          handleAddCart={handleAddCart}
         />
       ))}
     </div>
