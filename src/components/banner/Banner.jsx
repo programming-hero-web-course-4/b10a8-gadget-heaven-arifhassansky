@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
-    <div className="flex flex-col items-center justify-center pt-14 pb-36 md:pb-64 bg-primary text-white rounded-bl-xl rounded-br-xl mx-7 relative mb-[491px]">
+    <div className="flex flex-col items-center justify-center pt-14 pb-36  md:pb-64 bg-primary text-white rounded-bl-xl rounded-br-xl mx-7 relative mb-[170px]">
       <h1 className="text-3xl md:text-4xl lg:text-6xl mb-6 text-center lg:leading-[72px]">
         Upgrade Your Tech Accessorize with <br />
         Gadget Heaven Accessories

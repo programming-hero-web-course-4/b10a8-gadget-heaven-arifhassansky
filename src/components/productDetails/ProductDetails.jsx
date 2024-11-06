@@ -42,7 +42,7 @@ const ProductDetails = () => {
   return (
     <>
       <div className="bg-gray-100 relative">
-        <div className="pt-8 bg-primary text-white pb-60 mb-[800px] md:mb-[600px] lg:mb-96">
+        <div className="pt-8 bg-primary text-white pb-60 mb-[1000px] md:mb-[640px] lg:mb-96">
           <SectionTitle
             title="Product Details"
             subtitle="Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!"
@@ -57,8 +57,8 @@ const ProductDetails = () => {
               alt={seeDetails?.product_title || "Product"}
             />
           </figure>
-          <div className="w-2/3 ">
-            <h3 className="font-semibold text-3xl mb-3">
+          <div className="lg:w-2/3 ">
+            <h3 className="font-semibold text-lg md:text-xl lg:text-3xl mb-3">
               {seeDetails?.product_title}
             </h3>
             <h4 className="mb-4 font-semibold text-lg">

@@ -90,7 +90,9 @@ const Statistics = () => {
           />
         </div>
         <div className="w-11/12 mx-auto pb-24 ">
-          <h2 className="font-bold text-3xl mb-8 mt-12">Statistics</h2>
+          <h2 className="font-bold text-xl md:text-2xl lg:text-3xl mb-8 mt-12">
+            Statistics
+          </h2>
           <div
             className="bg-white rounded-2xl"
             style={{ width: "100%", height: 400 }}

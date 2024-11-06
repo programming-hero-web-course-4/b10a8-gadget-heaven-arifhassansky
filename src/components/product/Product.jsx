@@ -13,8 +13,10 @@ const Product = ({ item }) => {
         <img src={product_image} alt="Shoes" />
       </figure>
       <div className="">
-        <h2 className="mt-6 font-bold text-2xl mb-3">{product_title}</h2>
-        <p className="font-medium text-xl mb-4">price: ${price} </p>
+        <h2 className="mt-6 font-bold text-md md:text-xl lg::text-2xl mb-3">
+          {product_title}
+        </h2>
+        <p className="font-medium text:sm md:text-xl mb-4">price: ${price} </p>
         <div className="card-actions ">
           <button
             onClick={handleViewDetails}
