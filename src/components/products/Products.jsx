@@ -16,7 +16,7 @@ const Products = () => {
       );
       setProducts(filteredProducts);
     } else {
-      setProducts(data);
+      setProducts(data.slice(0, 9));
     }
   }, [category, data]);
 

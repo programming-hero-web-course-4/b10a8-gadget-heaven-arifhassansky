@@ -16,20 +16,20 @@
     "rating": 4.8
   },
   {
-    "product_id": "P002",
-    "product_title": "iPhone 15 Pro",
-    "product_image": "https://i.ibb.co.com/G9MZJgF/i-Phone-15-Pro.webp",
-    "category": "Mobile",
-    "price": 699.0,
-    "description": "Affordable smartphone with essential features and reliable battery life.",
+    "product_id": "A002",
+    "product_title": "Awei T71 True Wireless Earbuds",
+    "product_image": "https://i.ibb.co.com/nbtqLZv/Awei-T71-True-Wireless-Earbuds.webp",
+    "category": "Accessories",
+    "price": 245.99,
+    "description": "High-capacity portable charger with dual USB ports.",
     "specification": [
-      "6.1-inch LCD display",
-      "Dual rear cameras",
-      "4G LTE",
-      "64GB storage"
+      "20000mAh capacity",
+      "Fast charging",
+      "Compact design",
+      "LED indicator"
     ],
-    "availability": true,
-    "rating": 3.2
+    "availability": false,
+    "rating": 3.6
   },
   {
     "product_id": "P003",
@@ -48,6 +48,54 @@
     "rating": 2.7
   },
   {
+    "product_id": "P004",
+    "product_title": "Doogee V40 Pro Bluea",
+    "product_image": "https://i.ibb.co.com/vjMZdCL/Doogee-V40-Pro-Blue.webp",
+    "category": "Mobile",
+    "price": 499.99,
+    "description": "Premium smartphone with Apple's latest A17 chip and advanced camera system.",
+    "specification": [
+      "6.1-inch Super Retina XDR display",
+      "A17 Bionic chip",
+      "48MP camera",
+      "3200mAh battery"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "A003",
+    "product_title": "Tripple EW45 TWS Bluetooth Earbuds",
+    "product_image": "https://i.ibb.co.com/XzLJpX9/Tripple-EW45-TWS-Wireless-Bluetooth-Earbuds.webp",
+    "category": "Accessories",
+    "price": 365.99,
+    "description": "Advanced smartwatch with fitness tracking and health monitoring.",
+    "specification": [
+      "AMOLED display",
+      "Heart rate monitor",
+      "GPS",
+      "Water-resistant"
+    ],
+    "availability": true,
+    "rating": 4.0
+  },
+  {
+    "product_id": "P005",
+    "product_title": "Xiaomi 14T Lemon Green",
+    "product_image": "https://i.ibb.co.com/gtS0csn/Xiaomi-14-T-Lemon-Green.webp",
+    "category": "Mobile",
+    "price": 349.99,
+    "description": "Flagship phone with high performance and a fast refresh rate screen.",
+    "specification": [
+      "6.7-inch Fluid AMOLED display",
+      "Snapdragon 8 Gen 2 processor",
+      "50MP camera",
+      "5000mAh battery"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
     "product_id": "L001",
     "product_title": "Lenovo IdeaPad Flex 5 ",
     "product_image": "https://i.ibb.co.com/TB1q1cK/Lenovo-Idea-Pad-Flex-5.webp",
@@ -64,6 +112,22 @@
     "rating": 3.8
   },
   {
+    "product_id": "P006",
+    "product_title": "Samsung Galaxy S23",
+    "product_image": "https://i.ibb.co.com/DYX8NrR/Samsung-Galaxy-S23.jpg",
+    "category": "Mobile",
+    "price": 685.99,
+    "description": "Flagship smartphone with high-end performance and camera capabilities.",
+    "specification": [
+      "6.8-inch Dynamic AMOLED display",
+      "Snapdragon 8 Gen 2 processor",
+      "200MP camera",
+      "5000mAh battery"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
     "product_id": "L002",
     "product_title": "Apple MacBook Air 15",
     "product_image": "https://i.ibb.co.com/cXd33Xq/Apple-Mac-Book-Air-15.webp",
@@ -78,6 +142,22 @@
     ],
     "availability": true,
     "rating": 3.5
+  },
+  {
+    "product_id": "P002",
+    "product_title": "iPhone 15 Pro",
+    "product_image": "https://i.ibb.co.com/G9MZJgF/i-Phone-15-Pro.webp",
+    "category": "Mobile",
+    "price": 699.0,
+    "description": "Affordable smartphone with essential features and reliable battery life.",
+    "specification": [
+      "6.1-inch LCD display",
+      "Dual rear cameras",
+      "4G LTE",
+      "64GB storage"
+    ],
+    "availability": true,
+    "rating": 3.2
   },
   {
     "product_id": "L003",
@@ -110,37 +190,5 @@
     ],
     "availability": true,
     "rating": 2.4
-  },
-  {
-    "product_id": "A002",
-    "product_title": "Awei T71 True Wireless Earbuds",
-    "product_image": "https://i.ibb.co.com/nbtqLZv/Awei-T71-True-Wireless-Earbuds.webp",
-    "category": "Accessories",
-    "price": 245.99,
-    "description": "High-capacity portable charger with dual USB ports.",
-    "specification": [
-      "20000mAh capacity",
-      "Fast charging",
-      "Compact design",
-      "LED indicator"
-    ],
-    "availability": false,
-    "rating": 3.6
-  },
-  {
-    "product_id": "A003",
-    "product_title": "Tripple EW45 TWS Bluetooth Earbuds",
-    "product_image": "https://i.ibb.co.com/XzLJpX9/Tripple-EW45-TWS-Wireless-Bluetooth-Earbuds.webp",
-    "category": "Accessories",
-    "price": 365.99,
-    "description": "Advanced smartwatch with fitness tracking and health monitoring.",
-    "specification": [
-      "AMOLED display",
-      "Heart rate monitor",
-      "GPS",
-      "Water-resistant"
-    ],
-    "availability": true,
-    "rating": 4.0
   }
 ]
