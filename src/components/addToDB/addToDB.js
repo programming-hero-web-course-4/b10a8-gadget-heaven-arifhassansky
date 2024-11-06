@@ -61,16 +61,6 @@ const addWishlists = (product) => {
     (item) => item.product_id === product.product_id
   );
   if (isExists) return;
-
-  const totalPrice = wishlist.reduce((accumulator, currentValue) => {
-    return accumulator + (currentValue.price || 0);
-  }, 0);
-
-  if (totalPrice + product.price > 1000) {
-    toast.error("Oops! You cannot add wish item avobe $1000 ");
-    return;
-  }
-
   wishlist.push(product);
   localStorage.setItem("wishlist", JSON.stringify(wishlist));
   toast.success("Successfully Added to Wishlist!");

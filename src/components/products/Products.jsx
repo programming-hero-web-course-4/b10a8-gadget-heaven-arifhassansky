@@ -1,5 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
-import Product from "../../product/Product";
+import Product from "../product/Product";
 import { useEffect, useState } from "react";
 import notAvailable from "../../assets/error.webp";
 
